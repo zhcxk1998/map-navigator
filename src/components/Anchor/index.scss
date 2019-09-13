@@ -1,0 +1,23 @@
+.anchor-container {
+  position: absolute;
+  // width: 30px;
+  // height: 40px;
+  // z-index: 8;
+}
+
+.anchor-img {
+  width: 30px;
+  height: 40px;
+  background: url(../../assets/image/anchor.png) no-repeat;
+  background-size: contain;
+  z-index: 7;
+}
+
+.info-container {
+  width: 150px;
+  height: 100px;
+  background: #fff;
+  border: #333 1px solid;
+  transform: translate3d(-60px, 0, 0);
+  z-index: 10;
+}
