@@ -4,7 +4,7 @@
   overflow: hidden;
 }
 
-.test {
+.map {
   position: relative;
   width: 300px;
   height: 300px;
@@ -13,8 +13,11 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  transition: background .5s ease;
-  z-index:8;
+  z-index: 8;
+  will-change: tranform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000;
 }
 
 .grid-container {
@@ -24,12 +27,12 @@
   z-index: 10;
 }
 
-.scale-button{
+.scale-button {
   width: 60px;
   z-index: 10;
 }
 
-.mask{
+.mask {
   position: fixed;
   width: 0;
   left: 0;

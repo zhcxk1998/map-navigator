@@ -1,23 +1,69 @@
-.anchor-container {
-  position: absolute;
-  // width: 30px;
-  // height: 40px;
-  // z-index: 8;
+.anchor {
+  &-wrap {
+    position: absolute;
+    width: 30px;
+    height: 40px;
+  }
+
+  &-img {
+    position: relative;
+    width: 30px;
+    height: 40px;
+    background: url(../../assets/image/anchor.png) no-repeat;
+    background-size: contain;
+    z-index: 7;
+  }
 }
 
-.anchor-img {
-  width: 30px;
-  height: 40px;
-  background: url(../../assets/image/anchor.png) no-repeat;
-  background-size: contain;
-  z-index: 7;
-}
+.info {
+  &-container {
+    position: relative;
+    width: 180px;
+    height: 160px;
+    background: #fff;
+    border: #333 1px solid;
+    transform: translate3d(-60px, 0, 0);
+    z-index: 10;
+  }
 
-.info-container {
-  width: 150px;
-  height: 100px;
-  background: #fff;
-  border: #333 1px solid;
-  transform: translate3d(-60px, 0, 0);
-  z-index: 10;
+  &-header {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 0 5px;
+    font-weight: bold;
+    border-bottom: #d7d7d7 1px solid;
+  }
+
+  &-content {
+    margin: 10px 0;
+    padding: 0 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; //行数
+    -webkit-box-orient: vertical;
+    line-height: 20px;
+  }
+
+  &-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 30px;
+    border-top: #d7d7d7 1px solid;
+
+    .action {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 33%;
+      height: 30px;
+      border-right: #d7d7d7 1px solid;
+    }
+
+    .action:last-child {
+      border-right: 0;
+    }
+  }
 }
